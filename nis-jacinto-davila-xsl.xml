@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="nis-jacinto-davila.xsl"?>
+
+<ins>
+<in id="1" source="Olimpiada recreativa 4to 2011">
+<initial>
+José se levantó hace una hora y cuarto. En tres horas y cuarto es la salida del tren. ¿Cuánto tiempo transcurre desde que José se levantó y la salida de tren?
+</initial>
+<desired>
+<context>
+<event id="1">José se levantó</event> hace <number>una hora y cuarto</number>. En <number>tres horas y cuarto</number> es <event id="2">la salida del tren</event>. 
+</context>
+<question>¿Cuánto tiempo <var>transcurre</var> desde que José se levantó y la salida de tren?</question>
+<formulae>
+<equation>
+transcurre = 1 + 1/4 + 3 + 1/4
+</equation>
+</formulae>
+<answer>
+Transcurren cuatro horas y media
+</answer>
+</desired>
+</in>
+
+<in id="2" source="Olimpiada recreativa 4to 2011">
+<initial>
+Jaime paga 3 Bs. y 75 céntimos por 3 bolas de helado. Miguel paga 6 Bs. y 30 céntimos por 2 pasteles. ¿Cuánto pagará Daniel por una bola de helado y un pastel?
+</initial>
+<desired>
+<context>
+Jaime paga <number>3 Bs. y 75 céntimos</number> por 3 <variable>bolas de helado</variable>. Miguel paga <number>6 Bs. y 30 céntimos</number> por 2 <variable>pasteles</variable>.
+</context>
+<question>¿Cuánto <variable>pagará</variable> Daniel por <number>una</number> <variable>bola de helado</variable> y <number>un</number> <variable>pastel</variable>?</question>
+<formulae>
+<equation>
+3 * bola de helado = 3,75
+</equation>
+<equation>
+2 * pastel = 6,30
+</equation>
+<equation>
+pagará = bola de helado + pastel
+</equation>
+</formulae>
+<answer>
+Pagará 4,40 Bs.
+</answer>
+</desired>
+</in>
+
+<in id="3" source="Olimpiada recreativa 4to 2011">
+<initial>
+El granjero tiene cartones para 6 huevos y para 12 huevos. ¿Cuál es la menor cantidad de cartones que se necesita para almacenar 78 huevos?
+</initial>
+<desired>
+<context>
+El granjero tiene cartones <variable>para 6 huevos</variable> y <variable>para 12 huevos</variable>.
+</context>
+<question>¿Cuál es la menor <variable>cantidad de cartones</variable> que se necesita para almacenar 78 huevos?</question>
+<formulae>
+<equation>
+cantidad de cartones = para 6 huevos + para 12 huevos. 
+</equation>
+<equation>
+6 * para 6 huevos + 12 * para 12 huevos = 78
+</equation>
+</formulae>
+<answer>
+La menor cantidad de cartones es 7. 6 para 12 huevos y 1 para 6 huevos. 
+</answer>
+</desired>
+</in>
+
+
+<in id="4" source="Olimpiada recreativa 4to 2011">
+<initial>
+Juan tiene 13 billetes en su bolsillo, cada uno de Bs 5 o Bs 20. ¿Qué cantidad NO puede ser el valor total de los billetes de Juan? 80, 90, 95, 110, 170
+</initial>
+<desired>
+<context>
+Juan tiene 13 billetes en su bolsillo, cada uno <variable>de Bs 5</variable> o <variable>de Bs 20</variable>.
+</context>
+<question>¿Qué cantidad NO puede ser el <variable>valor total de los billetes</variable> de Juan?</question>
+<candidates>
+<option id="a">80</option>
+<option id="b">90</option>
+<option id="c">95</option>
+<option id="d">110</option>
+<option id="e">170</option>
+</candidates>
+<formulae>
+<equation>
+de Bs 5 + de Bs 20 = 13
+</equation>
+<equation>
+5 * de Bs 5 + 20 * de Bs 20 = valor total de los billetes
+</equation>
+<formula>
+valor total de los billetes = 80 o
+valor total de los billetes = 90 o
+valor total de los billetes = 95 o
+valor total de los billetes = 110 o
+valor total de los billetes = 170 o
+</formula>
+</formulae>
+<answer>
+El valor total de los billetes no puede ser 90
+</answer>
+</desired>
+</in>
+
+<in id="5" source="Olimpiada recreativa 4to 2011">
+<initial>
+Si un cuarto de leche cuesta 3 bs. ¿Cuánto cuesta dos tercios de leche?
+</initial>
+<desired>
+<context>
+Si <number>un cuarto</number> de <variable>leche</variable> cuesta 3 bs.
+</context>
+<question>¿Cuánto <variable>cuesta</variable> <number>dos tercios</number> de <variable>leche</variable>?</question>
+<formulae>
+<equation>
+leche / 4 = 3
+</equation>
+<equation>
+2/3 * leche = cuesta
+</equation>
+</formulae>
+<answer>
+Cuesta 8 bs.  
+</answer>
+</desired>
+</in>
+
+<in id="6" source="Olimpiada recreativa 4to 2011">
+<initial>
+¿Qué hora será si falta del día la tercera parte de las horas que ya pasaron?
+</initial>
+<desired>
+<question>¿Qué hora <variable>será</variable> si <variable>falta</variable> del día la <number>tercera parte</number> de las horas que ya <variable>pasaron</variable>?</question>
+<formulae>
+<equation>
+pasaron/3 = falta
+</equation>
+<equation>
+pasaron + falta = 24
+</equation>
+<equation>
+será = pasaron
+</equation>
+</formulae>
+<answer>
+Será las 18 horas (6 pm). 
+</answer>
+</desired>
+</in>
+
+<in id="7" source="Olimpiada recreativa 4to 2011">
+<initial>
+Ana, Berta, Carlos, Diego, Erick y Freddy, cada uno, lanza un dado normal. Todos ellos obtienen números diferentes. El número de Ana es el doble que el de Berta y el triple que el de Carlos. El número de Diego es cuatro veces más que el número de Erick. 
+¿Qué número obtuvo Freddy?
+</initial>
+<desired>
+<context>
+<variable>Ana</variable>, <variable>Berta</variable>, <variable>Carlos</variable>, <variable>Diego</variable>, <variable>Erick</variable> y <variable>Freddy</variable>, cada uno, lanza un dado normal. Todos ellos obtienen números diferentes. El número de <variable>Ana</variable> es el <number>doble</number> que el de <variable>Berta</variable> y el <number>triple</number> que el de <variable>Carlos</variable>. El número de <variable>Diego</variable> es <number>cuatro</number> veces más que el número de <variable>Erick</variable>. 
+</context>
+<question>¿Qué número obtuvo <variable>Freddy</variable>?</question>
+<formulae>
+<equation>
+Ana = 2 * Berta
+</equation>
+<equation>
+Ana = 3 * Carlos
+</equation>
+<equation>
+Diego = Erick + 4
+</equation>
+</formulae>
+<answer>
+Freddy obtuvo el cuatro
+</answer>
+</desired>
+</in>
+
+<in id="8" source="Olimpiada recreativa 4to 2011">
+<initial>José va de su casa al pueblo y tarda 4 días: el primer día hizo 5/8 de toda la distancia. El segundo día hizo 1/12 de toda la distancia, en el tercer día corrió 5 km y para el cuarto día aún le faltaba 1/4 de toda la distancia. ¿Qué distancia hay de la casa de José al pueblo?
+</initial>
+<desired>
+<context>
+José va de su casa al pueblo y tarda 4 días: el primer día hizo 5/8 de toda la <variable>distancia</variable>. El segundo día hizo 1/12 de toda la <variable>distancia</variable>, en el tercer día corrió 5 km y para el cuarto día aún le faltaba 1/4 de toda la <variable>distancia</variable>.
+</context>
+<question>¿Qué <variable>distancia</variable> hay de la casa de José al pueblo?</question>
+<formulae>
+<equation>
+5/8 * distancia + 1/12 * distancia + 5 + 1/4 * distancia = distancia
+</equation>
+</formulae>
+<answer>
+La distancia es de 120 km. 
+</answer>
+</desired>
+</in>
+
+<in id="9" source="Olimpiada recreativa regional 4to 2005">
+<initial>
+Observa las balanzas en equilibrio: Un círculo se equilibra con un triángulo y un rombo. Un círculo y un rombo se equilibra con un triángulo y una cesta. Un triángulo se equilibra con una cesta y un rombo. ¿Cuántos rombos equilibran un círculo?
+</initial>
+<desired>
+<context>
+Observa las balanzas en equilibrio: <number>Un</number> <variable>círculo</variable> se equilibra con <number>un</number> <variable>triángulo</variable> y <number>un</number> <variable>rombo</variable>. <number>Un</number> <variable>círculo</variable> y <number>un</number> <variable>rombo</variable> se equilibra con <number>un</number> <variable>triángulo</variable> y <number>una</number> <variable>cesta</variable>. <number>Un</number> <variable>triángulo</variable> se equilibra con <number>una</number> <variable>cesta</variable> y <number>un</number> <variable>rombo</variable>.
+</context>
+<question>¿Cuántos <variable>rombos</variable> equilibran <number>un</number> <variable>círculo</variable>?</question>
+<formulae>
+<equation>
+circulo = triángulo + rombo
+</equation>
+<equation>
+círculo + rombo = triángulo + cesta
+</equation>
+<equation>
+triángulo = cesta + rombo
+</equation>
+</formulae>
+<answer>
+Un círculo son cuatro rombos 
+</answer>
+</desired>
+</in>
+
+<in id="10" source="Jacinto Dávila">
+<initial>
+La abuela mezcló los huevos de gallina con los de pata en un mismo cartón. Los de gallina son el doble de los de pata. Hay 12 huevos en total. ¿Cuántos son de gallina?.
+</initial>
+<desired>
+<context>
+La abuela mezcló los <variable>huevos</variable> de <variable>gallina</variable> con los de <variable>pata</variable> en un mismo cartón. Los de <variable>gallina</variable> son el <number>doble</number> de los de <variable>pata</variable>. Hay 12 huevos en <variable>total</variable>.
+</context>
+<question>¿Cuántos son de <variable>gallina</variable>?</question>
+<formulae>
+<equation>
+huevos = gallina + pata
+</equation>
+<equation>
+gallina = 2 * pata
+</equation>
+<equation>
+huevos = 12
+</equation>
+</formulae>
+<answer>
+Los de gallina son 8 
+</answer>
+</desired>
+</in>
+
+</ins>
+
